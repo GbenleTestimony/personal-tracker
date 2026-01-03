@@ -59,4 +59,38 @@ button{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-}   
+}  
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem, auto;
+    align-items: center;
+    /* background-color: red; */
+    width: 35%;
+}
+.on{
+    background-color: white;
+    color: green;
+    font-size: 1.5rem;
+    will-change: scale;
+    transition: scale 200ms;
+    outline: none;
+    border: none;
+}
+.on:hover{
+    scale: 1.2;
+}
+.normal{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    /* will-change: scale; */
+    transition: all 500ms;
+}
+.normal:hover{
+    scale: 1.2;
+    color: darkgreen;
+}

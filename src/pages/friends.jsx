@@ -1,10 +1,10 @@
 import '../modules/components.css'
 
-export default function Profile(){
+export default function Friends(){
     
     return(
         <>
-            This is my profile
+            This are my friends
         </>
     )
 }

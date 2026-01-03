@@ -1,9 +1,9 @@
 import WelcomeHeader from "../components/welcomeheader";
 
-export default function WelcomePage() {
+export default function WelcomePage({show}) {
     return(
         <>
-            <WelcomeHeader/>
+            <WelcomeHeader show={show}/>
         </>
     )
 }
