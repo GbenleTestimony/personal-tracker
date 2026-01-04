@@ -94,3 +94,19 @@ button{
     scale: 1.2;
     color: darkgreen;
 }
+.textInput{
+    width: 1000px;
+    height: 70px;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}

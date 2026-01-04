@@ -1,8 +1,8 @@
 import Userheader from "../components/userheader";
 import Home from "./home";
 import About from "./about"
-import Friends from "./friends"
-import Profile from "./profile"
+import Contact from "./contact"
+import Projects from "./projects"
 import { useState } from "react";
 
 
@@ -11,12 +11,12 @@ export default function UserPage({hide}) {
 
 const [onHome, setOnHome]=useState(true);
 const [onAbout, setOnAbout]=useState(false);
-const [onFriends, setOnFriends]=useState(false);
-const [onProfile, setOnProfile]= useState(false);
+const [onContact, setOnContact]=useState(false);
+const [onProjects, setOnProjects]= useState(false);
 const [homestyle, setHomeStyle]= useState('on');
 const [aboutstyle, setAboutStyle]= useState('normal');
-const [friendsstyle, setFriendsstyle]= useState('normal');
-const [profilestyle, setProfilestyle]= useState('normal');
+const [contactstyle, setContactStyle]= useState('normal');
+const [projectstyle, setProjectStyle]= useState('normal');
 
 
     function home () {
@@ -25,10 +25,10 @@ const [profilestyle, setProfilestyle]= useState('normal');
         setHomeStyle('on')
         setOnAbout(false)
         setAboutStyle('normal')
-        setOnFriends(false)
-        setFriendsstyle('normal')
-        setOnProfile(false)
-        setProfilestyle('normal')
+        setOnContact(false)
+        setContactStyle('normal')
+        setOnProjects(false)
+        setProjectStyle('normal')
     }
     function about() {
         console.log('hi')
@@ -36,28 +36,28 @@ const [profilestyle, setProfilestyle]= useState('normal');
         setAboutStyle('on')
         setOnHome(false)
         setHomeStyle('normal')
-        setOnFriends(false)
-        setFriendsstyle('normal')
-        setOnProfile(false)
-        setProfilestyle('normal')
+        setOnContact(false)
+        setContactStyle('normal')
+        setOnProjects(false)
+        setProjectStyle('normal')
     }
-    function friends() {
+    function contact() {
         console.log('hi')
-        setOnFriends(true)
-        setFriendsstyle('on')
+        setOnContact(true)
+        setContactStyle('on')
         setOnAbout(false)
         setAboutStyle('normal')
         setOnHome(false)
         setHomeStyle('normal')
-        setOnProfile(false)
-        setProfilestyle('normal')
+        setOnProjects(false)
+        setProjectStyle('normal')
     }
-    const profile=()=>{
+    const projects=()=>{
         console.log('hi')
-        setOnProfile(true)
-        setProfilestyle('on')
-        setOnFriends(false)
-        setFriendsstyle('normal')
+        setOnProjects(true)
+        setProjectStyle('on')
+        setOnContact(false)
+        setContactStyle('normal')
         setOnAbout(false)
         setAboutStyle('normal')
         setOnHome(false)
@@ -65,11 +65,11 @@ const [profilestyle, setProfilestyle]= useState('normal');
     }
     return(
         <>
-            <Userheader hide={hide} home={home} about={about} friends={friends} profile={profile} homestyle={homestyle} aboutstyle={aboutstyle} friendsstyle={friendsstyle} profilestyle={profilestyle}/>
+            <Userheader hide={hide} home={home} about={about} friends={contact} profile={projects} homestyle={homestyle} aboutstyle={aboutstyle} friendsstyle={contactstyle} profilestyle={projectstyle}/>
             {onHome && <Home/>}
             {onAbout && <About/>}
-            {onFriends && <Friends/>}
-            {onProfile && <Profile/>}
+            {onContact && <Contact/>}
+            {onProjects && <Projects/>}
             
         </>
     )

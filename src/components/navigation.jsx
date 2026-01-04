@@ -8,8 +8,8 @@ export default function NavHeader({home, about, friends, profile, homestyle, abo
             <nav className="nav-header">
                 <Button value={'Home'} Click={home} style={homestyle}/>
                 <Button value={'About'} Click={about} style={aboutstyle}/>
-                <Button value={'Friends'} Click={friends} style={friendsstyle}/>
-                <Button value={'Profile'} Click={profile} style={profilestyle}/>
+                <Button value={'Contact'} Click={friends} style={friendsstyle}/>
+                <Button value={'Projects'} Click={profile} style={profilestyle}/>
             </nav>
         </>
     )

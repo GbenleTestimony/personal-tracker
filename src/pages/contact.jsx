@@ -1,10 +1,10 @@
 import '../modules/components.css'
 
-export default function Profile(){
+export default function Contact(){
     
     return(
         <>
-            This is my profile
+            Contact Me
         </>
     )
 }
